@@ -1,0 +1,12 @@
+﻿@model List<HotelApp.Models.hotel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach(var hotel in Model)
+            {                  
+                <h2>@hotel.Name</h2>
+                <br />
+            }
+
