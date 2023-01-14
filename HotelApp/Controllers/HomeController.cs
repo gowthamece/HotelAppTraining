@@ -16,7 +16,8 @@ namespace HotelApp.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+            ViewData["MessageData"] = "This is my ViewData";
+            
             return View();
         }
 
