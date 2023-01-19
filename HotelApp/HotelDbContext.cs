@@ -14,6 +14,7 @@ namespace HotelApp
 
         }
         public DbSet<hotel> hotel { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
     }
 }

@@ -127,6 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\hotelsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -137,7 +138,12 @@
     <Compile Include="Migrations\202301141131038_IntialCommit.designer.cs">
       <DependentUpon>202301141131038_IntialCommit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301191056135_CustomerModel.cs" />
+    <Compile Include="Migrations\202301191056135_CustomerModel.designer.cs">
+      <DependentUpon>202301191056135_CustomerModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\hotel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -183,6 +189,8 @@
     <Content Include="Views\hotels\Create.cshtml" />
     <Content Include="Views\hotels\Edit.cshtml" />
     <Content Include="Views\hotels\Delete.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -203,6 +211,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202301141131038_IntialCommit.resx">
       <DependentUpon>202301141131038_IntialCommit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301191056135_CustomerModel.resx">
+      <DependentUpon>202301191056135_CustomerModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
